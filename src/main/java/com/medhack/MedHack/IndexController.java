@@ -9,8 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class IndexController {
-
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String index(){
         return "MedHack2k17";
     }
