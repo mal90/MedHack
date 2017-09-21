@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     @RequestMapping("/hello")
     public String index(){
-        return "MedHack2k17";
+        return "createPatientPrescription.html";
     }
 }
