@@ -12,6 +12,6 @@ public class IndexController {
 
     @RequestMapping("/")
     public String index(){
-        return "MedHack2k17";
+        return "createPatientPrescription.html";
     }
 }
