@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="resources/css/custom.css">
         <script src="resources/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
-    <body>
+    <body ng-app="medhack.main" ng-controller="mainCtrl">
         <!--[if lt IE 8]>
                 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -631,7 +631,7 @@
                         <form class="tg-form-modal tg-form-signin">
                             <fieldset>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email Address">
+                                    <input type="email" class="form-control" placeholder="Email Address" ng-model="formData.userEmail" />
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control" placeholder="Password">
@@ -646,7 +646,7 @@
                                         <i class="fa fa-question-circle"></i>
                                     </a>
                                 </div>
-                                <a class="tg-btn tg-btn-lg" href="createPatientPrescription.html">LOGIN now</a>
+                                <a class="tg-btn tg-btn-lg" ng-click="goToPortal(formData.userEmail)">LOGIN now</a>
                             </fieldset>
                         </form>
                     </div>
@@ -708,6 +708,9 @@
 
         <script src="resources/js/vendor/jquery-library.js"></script>
         <script src="resources/js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+        <script src="resources/js/app/app.js"></script>
+        <script src="resources/js/app/main.controller.js"></script>
         <script src="resources/js/jquery-ui.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script src="resources/js/map/jquery.gomap.js"></script>
