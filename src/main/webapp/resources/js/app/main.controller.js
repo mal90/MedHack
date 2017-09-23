@@ -18,7 +18,7 @@
                 window.location.href = "/Phamacy.html";
             }
             else if (email === "patient@gmail.com"){
-                window.location.href = "/createPatientPrescription.html";
+                window.location.href = "/Patient.html";
             }
             else if(email === "doctor@gmail.com"){
                 window.location.href = "/createPatientPrescription.html";
