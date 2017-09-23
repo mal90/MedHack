@@ -178,6 +178,7 @@
 				</li>
 			</ul>
 		</div>
+
 	</div>
 	<!-- /main navbar -->
 
@@ -234,11 +235,173 @@
 	</div>
 	<!-- /page header -->
 
-
 	<!-- Page container -->
 	<div class="page-container">
-    </div>    
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Horizontal form options -->
+				<div class="row">
+					<div class="col-md-10">
+<!-- Striped rows -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">My Prescription History</h5>
+								<div class="heading-elements">
+									<ul class="icons-list">
+										<li><a data-action="collapse"></a></li>
+										<li><a data-action="reload"></a></li>
+										<li><a data-action="close"></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>#</th>
+											<th>Prescription ID</th>
+											<th>Date</th>
+											<th>Medical officer/Doctor Name</th>
+											<th>Medical officer/Doctor ID</th>
+											<th>Description</th>
+											<th>Status</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>P1002</td>
+											<td>2017-01-02</td>
+											<td>Doctor 2</td>
+											<td>D002</td>
+											<td>Description 2</td>
+											<td>
+											<a href="#" class="label label-warning" data-toggle="modal" data-target="#edit_modal">closed</a>
+											</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>P1003</td>
+											<td>2017-01-03</td>
+											<td>Doctor 3</td>
+											<td>D003</td>
+											<td>Description 3</td>
+											<td>
+											<a href="#" class="label label-warning" data-toggle="modal" data-target="#edit_modal">closed</a>
+											</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>P1004</td>
+											<td>2017-01-04</td>
+											<td>Doctor 4</td>
+											<td>D004</td>
+											<td>Description 4</td>
+											<td>
+											<a href="#" class="label label-warning" data-toggle="modal" data-target="#edit_modal">closed</a>
+											</td>
+										</tr>
+										<tr>
+											<td>1</td>
+											<td>P1005</td>
+											<td>2017-01-05</td>
+											<td>Doctor 5</td>
+											<td>D005</td>
+											<td>Description 5</td>
+											<td>
+											<a href="#" class="label label-success">new</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
 	<!-- /page container -->
+
+<!-- Edit modal -->
+					<div id="edit_modal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h5 class="modal-title">Prescription history</h5>
+								</div>
+
+								<div class="modal-body">
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>First Name</th>
+													<th>Last Name</th>
+													<th>Username</th>
+													<th class="col-xs-1">Action</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><input type="text" class="form-control" value="Mark"></td>
+													<td><input type="text" class="form-control" value="Otto"></td>
+													<td><input type="text" class="form-control" value="@mdo"></td>
+													<td class="text-center">
+														<ul class="icons-list">
+															<li><a href="#"><i class="icon-plus22"></i></a></li>
+															<li><a href="#"><i class="icon-cross3"></i></a></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td><input type="text" class="form-control" value="Jacob"></td>
+													<td><input type="text" class="form-control" value="Thornton"></td>
+													<td><input type="text" class="form-control" value="@fat"></td>
+													<td class="text-center">
+														<ul class="icons-list">
+															<li><a href="#"><i class="icon-plus22"></i></a></li>
+															<li><a href="#"><i class="icon-cross3"></i></a></li>
+														</ul>
+													</td>
+												</tr>
+												<tr>
+													<td><input type="text" class="form-control" value="Larry"></td>
+													<td><input type="text" class="form-control" value="the Bird"></td>
+													<td><input type="text" class="form-control" value="@twitter"></td>
+													<td class="text-center">
+														<ul class="icons-list">
+															<li><a href="#"><i class="icon-plus22"></i></a></li>
+															<li><a href="#"><i class="icon-cross3"></i></a></li>
+														</ul>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="modal-footer">
+									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /edit modal -->	
 
 
 	<!-- Footer -->
