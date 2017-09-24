@@ -285,7 +285,7 @@
 											<td>D002</td>
 											<td>Description 2</td>
 											<td>
-											<a href="#" class="label label-warning" data-toggle="modal" data-target="#edit_modal">closed</a>
+											<a href="#" class="label label-warning" data-toggle="modal" data-target="#closed_modal">closed</a>
 											</td>
 										</tr>
 										<tr>
@@ -296,7 +296,7 @@
 											<td>D003</td>
 											<td>Description 3</td>
 											<td>
-											<a href="#" class="label label-warning" data-toggle="modal" data-target="#edit_modal">closed</a>
+											<a href="#" class="label label-warning" data-toggle="modal" data-target="#closed_modal">closed</a>
 											</td>
 										</tr>
 										<tr>
@@ -307,7 +307,7 @@
 											<td>D004</td>
 											<td>Description 4</td>
 											<td>
-											<a href="#" class="label label-warning" data-toggle="modal" data-target="#edit_modal">closed</a>
+											<a href="#" class="label label-warning" data-toggle="modal" data-target="#closed_modal">closed</a>
 											</td>
 										</tr>
 										<tr>
@@ -318,7 +318,7 @@
 											<td>D005</td>
 											<td>Description 5</td>
 											<td>
-											<a href="#" class="label label-success">new</a>
+											<a href="#" class="label label-success" data-toggle="modal" data-target="#New modal">new</a>
 											</td>
 										</tr>
 									</tbody>
@@ -335,13 +335,13 @@
 	</div>
 	<!-- /page container -->
 
-<!-- Edit modal -->
-					<div id="edit_modal" class="modal fade" role="dialog">
+				<!-- Closed modal -->
+					<div id="closed_modal" class="modal fade" role="dialog">
 						<div class="modal-dialog modal-lg">
 							<div class="modal-content">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal">&times;</button>
-									<h5 class="modal-title">Prescription history</h5>
+									<h5 class="modal-title">Prescription history - List of drugs prescribed</h5>
 								</div>
 
 								<div class="modal-body">
@@ -349,60 +349,95 @@
 										<table class="table">
 											<thead>
 												<tr>
-													<th>First Name</th>
-													<th>Last Name</th>
-													<th>Username</th>
-													<th class="col-xs-1">Action</th>
+													<th>Drug Item name</th>
+													<th>Brand Name</th>
+													<th>Generic Name</th>
+													<th>Drug Category</th>
+													<th class="col-xs-1">Strength</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td><input type="text" class="form-control" value="Mark"></td>
-													<td><input type="text" class="form-control" value="Otto"></td>
-													<td><input type="text" class="form-control" value="@mdo"></td>
-													<td class="text-center">
-														<ul class="icons-list">
-															<li><a href="#"><i class="icon-plus22"></i></a></li>
-															<li><a href="#"><i class="icon-cross3"></i></a></li>
-														</ul>
-													</td>
+													<td><input type="text" class="form-control" value="Panadol"></td>
+													<td><input type="text" class="form-control" value="acetaminophen"></td>
+													<td><input type="text" class="form-control" value="TYLENOL"></td>
+													<td><input type="text" class="form-control" value="ADVIL, MOTRIN IB"></td>
+													<td><input type="text" class="form-control" value="5mg"></td>
 												</tr>
 												<tr>
-													<td><input type="text" class="form-control" value="Jacob"></td>
-													<td><input type="text" class="form-control" value="Thornton"></td>
-													<td><input type="text" class="form-control" value="@fat"></td>
-													<td class="text-center">
-														<ul class="icons-list">
-															<li><a href="#"><i class="icon-plus22"></i></a></li>
-															<li><a href="#"><i class="icon-cross3"></i></a></li>
-														</ul>
-													</td>
+													<td><input type="text" class="form-control" value="Amoxlini"></td>
+													<td><input type="text" class="form-control" value="acetaminophen"></td>
+													<td><input type="text" class="form-control" value="DILANTIN"></td>
+													<td><input type="text" class="form-control" value="MINOCIN"></td>
+													<td><input type="text" class="form-control" value="10mg"></td>
 												</tr>
 												<tr>
-													<td><input type="text" class="form-control" value="Larry"></td>
-													<td><input type="text" class="form-control" value="the Bird"></td>
-													<td><input type="text" class="form-control" value="@twitter"></td>
-													<td class="text-center">
-														<ul class="icons-list">
-															<li><a href="#"><i class="icon-plus22"></i></a></li>
-															<li><a href="#"><i class="icon-cross3"></i></a></li>
-														</ul>
-													</td>
+													<td><input type="text" class="form-control" value="Paracetamol"></td>
+													<td><input type="text" class="form-control" value="acetaminophen"></td>
+													<td><input type="text" class="form-control" value="TYLENOL"></td>
+													<td><input type="text" class="form-control" value="NEXIUM"></td>
+													<td><input type="text" class="form-control" value="12mg"></td>
 												</tr>
 											</tbody>
 										</table>
 									</div>
 								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Closed modal -->
 
-								<div class="modal-footer">
-									<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-									<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+					<!-- New modal -->
+					<div id="closed_modal" class="modal fade" role="dialog">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h5 class="modal-title">Prescription history - List of drugs prescribed</h5>
+								</div>
+
+								<div class="modal-body">
+									<div class="table-responsive">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>Drug Item name</th>
+													<th>Brand Name</th>
+													<th>Generic Name</th>
+													<th>Drug Category</th>
+													<th class="col-xs-1">Strength</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><input type="text" class="form-control" value="Panadol"></td>
+													<td><input type="text" class="form-control" value="acetaminophen"></td>
+													<td><input type="text" class="form-control" value="TYLENOL"></td>
+													<td><input type="text" class="form-control" value="ADVIL, MOTRIN IB"></td>
+													<td><input type="text" class="form-control" value="5mg"></td>
+												</tr>
+												<tr>
+													<td><input type="text" class="form-control" value="Amoxlini"></td>
+													<td><input type="text" class="form-control" value="acetaminophen"></td>
+													<td><input type="text" class="form-control" value="DILANTIN"></td>
+													<td><input type="text" class="form-control" value="MINOCIN"></td>
+													<td><input type="text" class="form-control" value="10mg"></td>
+												</tr>
+												<tr>
+													<td><input type="text" class="form-control" value="Paracetamol"></td>
+													<td><input type="text" class="form-control" value="acetaminophen"></td>
+													<td><input type="text" class="form-control" value="TYLENOL"></td>
+													<td><input type="text" class="form-control" value="NEXIUM"></td>
+													<td><input type="text" class="form-control" value="12mg"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- /edit modal -->	
-
+					<!-- /New modal -->	
 
 	<!-- Footer -->
 	<div class="footer text-muted">
